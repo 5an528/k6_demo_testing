@@ -1,0 +1,37 @@
+
+          /\      |‾‾| /‾‾/   /‾‾/
+     /\  /  \     |  |/  /   /  /
+    /  \/    \    |     (   /   ‾‾\
+   /          \   |  |\  \ |  (‾)  |
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: Dev-AUGX-Performence-Testing.js
+     output: -
+
+  scenarios: (100.00%) 1 scenario, 2 max VUs, 21m30s max duration (incl. graceful stop):
+           * default: 2 looping VUs for 21m0s (gracefulStop: 30s)
+
+
+running (21m30.0s), 0/2 VUs, 6 complete and 2 interrupted iterations
+default ✓ [======================================] 2 VUs  21m0s
+
+     █ Dev-AUGX-Performance-Testing
+
+     data_received..................: 29 MB  22 kB/s
+     data_sent......................: 2.4 MB 1.8 kB/s
+     group_duration.................: avg=5m37s    min=5m32s   med=5m37s    max=5m45s    p(90)=5m43s    p(95)=5m44s
+     http_req_blocked...............: avg=58.55ms  min=0s      med=0s       max=1.05s    p(90)=0s       p(95)=842.95ms
+     http_req_connecting............: avg=18.58ms  min=0s      med=0s       max=322.45ms p(90)=0s       p(95)=282.85ms
+     http_req_duration..............: avg=371.17ms min=54.24ms med=283.17ms max=11.62s   p(90)=473.84ms p(95)=850.78ms
+       { expected_response:true }...: avg=371.96ms min=54.24ms med=283.19ms max=11.62s   p(90)=475.44ms p(95)=847.39ms
+     http_req_failed................: 4.13%  ✓ 115      ✗ 2664
+     http_req_receiving.............: avg=24.98ms  min=0s      med=0s       max=4.3s     p(90)=14.84ms  p(95)=22.12ms
+     http_req_sending...............: avg=2.57ms   min=0s      med=0s       max=908.59ms p(90)=0s       p(95)=523.72µs
+     http_req_tls_handshaking.......: avg=36.3ms   min=0s      med=0s       max=666.65ms p(90)=0s       p(95)=551.14ms
+     http_req_waiting...............: avg=343.61ms min=50.34ms med=282.23ms max=10.78s   p(90)=468.89ms p(95)=830.3ms
+     http_reqs......................: 2779   2.154248/s
+     iteration_duration.............: avg=5m37s    min=5m32s   med=5m37s    max=5m45s    p(90)=5m43s    p(95)=5m44s
+     iterations.....................: 6      0.004651/s
+     vus............................: 2      min=2      max=2
+     vus_max........................: 2      min=2      max=2
